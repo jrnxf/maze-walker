@@ -25,6 +25,7 @@ h1 {
 button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  touch-action: manipulation; /* disables zooming in on button press on mobile */
 }
 
 #controls {
