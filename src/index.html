@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>maze-walker</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>maze-walker</h1>
+      <canvas id="canvas"></canvas>
+      <div id="controls">
+        <div class="buttons has-addons">
+          <button class="button" id="generate">
+            generate
+          </button>
+          <button class="button" id="solve">
+            solve
+          </button>
+          <button class="button" id="download">
+            download
+          </button>
+        </div>
+
+        <p class="text-xl">animation speed</p>
+        <div id="animation-speeds" class="control">
+          <label class="radio">
+            <input
+              class="animation-speed-option"
+              id="slow"
+              type="radio"
+              value="30"
+              name="animation-speed"
+            />
+            slow
+          </label>
+          <label class="radio">
+            <input
+              class="animation-speed-option"
+              id="medium"
+              type="radio"
+              value="15"
+              name="animation-speed"
+            />
+            medium
+          </label>
+          <label class="radio">
+            <input
+              class="animation-speed-option"
+              id="fast"
+              type="radio"
+              value="0"
+              name="animation-speed"
+            />
+            fast
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.ts"></script>
+  </body>
+</html>
